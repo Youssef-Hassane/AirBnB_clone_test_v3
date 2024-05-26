@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+"""Testing file
+"""
+import json
+import requests
+
+if __name__ == "__main__":
+    """ GET /api/v1/reviews/<review_id>
+    """
+    review_id = "nop"
+    r = requests.get("http://0.0.0.0:5050/api/v1/reviews/{}".format(review_id))
+    print(r.status_code)
